@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="es" >
+<head>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <meta name="description" content="pagina de ejercicio html y css">
+    <meta name="<keywords" content="iniciando, html y css">
+    <meta name="author" content="Jainer Polo Silvera">
+    <meta name="designer" content="ApoloKn">
+    <meta name="copyright" content="© 2025 ApoloKn. All rights reserved">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+    <meta name="theme-color" content="#808080">
+</head>
+
+<body>
+    <header>
+        <h1>formulario</h1>
+        <p>proceso de formulario</p>
+    </header>
+
+    <main>
+        <input type="search" placeholder="Buscar...">
+        <button type="submit">Buscar</button>
+        
+        <form action="#" method="post">
+        <pre>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="Apellido">Apellido:</label>
+            <input type="text" id="Apellido" name="Apellido" required>
+
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" min="1" max="100" required>
+            
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="role">Rol:</label>
+            <select name="rol" id="role">
+                <option value="estudiante">Estudiante</option>
+                <option value="profesor">Profesor</option>
+                <option value="administrador">Administrador</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fecha">Fecha de pago:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora de pago:</label> 
+            <input type="time" id="hora" name="hora" required>
+            
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100" required>
+
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+
+            <label for="file">Subir el archivo:</label>
+            <input type="file" id="file" name="file" accept=".jpg, .png, .pdf, .docx">
+
+            <label for="gender">
+                Genero:
+                <input type="radio" id="masculino" name="gender" value="masculino">Masculino
+                <input type="radio" id="femenino" name="gender" value="femenino">Femenino
+            </label>
+            
+            <label for="intereses">Intereses:</label>
+            <input type="checkbox" id="deportes" name="intereses" value="deportes">Deportes
+            <input type="checkbox" id="musica" name="intereses" value="musica">Música   
+            <input type="checkbox" id="arte" name="intereses" value="arte">Arte
+            <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">Tecnología
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+
+            <button type="reset">limpiar datos</button>
+
+            <button type="submit">Enviar</button>
+        </pre>
+        </form>
+    </main>
+
+    <footer>
+        <p>Derechos reservados &copy; 2025</p>
+        <p>Diseñado por ApoloKn</p>
+    </footer>
+</body>
+</html>
