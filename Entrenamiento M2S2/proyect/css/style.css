@@ -1,0 +1,283 @@
+/* Estilos base */
+body {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.background img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.9;
+}
+
+.encabezado {
+  background-color: #2b2929;
+  text-align: center;
+  padding: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  color: white;
+}
+
+.encabezado h1 {
+  font-size: 2.5em;
+  margin: 0;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.encabezado h2 {
+  font-size: 1.5em;
+  margin: 0;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.aboutme {
+  background-color: rgba(128, 128, 128, 0.5);
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 800px;
+}
+
+.aboutme h3, .aboutme h2 {
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.aboutme img {
+  width: 200px;
+  border-radius: 30%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutme p {
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 1px 3px #444;
+}
+
+.form {
+  background-color: rgba(128, 128, 128, 0.5);
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 800px;
+  color: white;
+}
+
+.form input,.form textarea,.form button {
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  width: auto;
+  padding: 7px;
+  box-shadow: #858585;
+}
+
+.box {
+    background-color: #b3a5a5;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 10px;
+    color: #000;
+    border-radius: 10px;
+}
+
+.navegation {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 1000;
+}
+
+.navegation nav {
+  a {
+    color: #ffffff;
+    background-color:#948888;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  a:hover {
+    color: #000000;
+    background-color:#ffffff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+  }
+  text-align: center;
+  justify-content: center;
+}
+
+.box::before {
+    font-weight: bold;
+}
+
+.rotate-box {
+    width: 100px;
+    background-color: rgb(255, 174, 22);
+    transform: rotate(-25deg);
+    color: #000;
+}
+
+.contact {
+  background-color: rgba(128, 128, 128, 0.5);
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 800px;
+  color: white;
+}
+
+.contact img {
+  width: 70px;
+  height: auto;
+}
+
+/* Contenedor para skills y links */
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skills, .links {
+  flex: 1 1 300px;
+  background-color: #4a4a4a;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.skills h3 {
+  font-size: 18px;
+  color: #fff;
+  margin: 5px 0;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  font-size: 18px;
+  color: #fff;
+  margin: 5px 0;
+}
+
+.links h3 {
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+  
+}
+
+.links img {
+  width: 100px;
+  height: auto; 
+  }
+.links img:hover, .contact img:hover {
+    filter: invert(1);
+    transition-duration: 0.5s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .encabezado h1 {
+    font-size: 1.8em;
+  }
+
+  .encabezado h2,
+  .aboutme h2,
+  .aboutme h3 {
+    font-size: 1.2em;
+  }
+
+  .aboutme img {
+    width: 150px;
+  }
+
+  .aboutme p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .skills li {
+    font-size: 16px;
+  }
+
+  .links img {
+    width: 80px;
+  }
+
+  .background img {
+    object-fit: cover;
+  }
+}
+aside a, .aboutme img, .contact img, .skills ul{
+  width: 100px;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  0%   {top: 0px;}
+  25%  {top: 10px;}
+  75%  {top: 5px}
+  100% {top: 0px;}
+}
+
+.footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgb(43, 41, 41);
+    background-size: cover;
+    text-align: center;
+    opacity: 90%;
+}
+
+.footer p {
+    position: relative;
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.test {
+  justify-self: center;
+  width: 75%;
+  text-align: center;
+  color:#ffffff;
+  text-shadow: #000000;
+}
+
+iframe {
+  width: 75%;
+  height: 75vh;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #2b2929;
+}
