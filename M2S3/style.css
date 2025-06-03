@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     min-height: 10vh;
+    background-color: #f8c1ca;
 }
 
 #logo {
@@ -23,6 +24,21 @@ header {
 
 
 nav {
-    background-color: green;
+    background-color: #ffee00;
     width: 80%;
+    display: flex;
+    align-items: center;
+    justify-items: end;
+    gap: 20px;
+
+    a {
+        font-size: 2ren;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+
+    }
+}
+
+nav:hover {
+    color: #c436c4;
 }
