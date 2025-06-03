@@ -5,13 +5,17 @@
 }
 
 header {
-    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
 }
 
 #logo {
     background-color: blue;
+    width: 20%;
 }
 
 nav {
     background-color: green;
+    width: 80%;
 }
