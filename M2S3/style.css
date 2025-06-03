@@ -13,7 +13,11 @@ header {
 #logo {
     background-color: blue;
     width: 20%;
+    img {
+        width: 100%;
+    }
 }
+
 
 nav {
     background-color: green;
