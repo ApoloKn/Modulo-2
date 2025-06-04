@@ -53,12 +53,17 @@ body {
   text-shadow: 2px 2px 4px #000;
 }
 
-.aboutme img {
+.aboutme {
+  img {
   width: 200px;
-  border-radius: 30%;
+  border-radius: 30px;
   margin: 20px auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 10px #00000065;}
+  img:hover {
+    border-radius: 60px;
+    box-shadow: 5px 10px #ac670c65;}
 }
+
 
 .aboutme p {
   color: white;
@@ -233,7 +238,7 @@ body {
     object-fit: cover;
   }
 }
-aside a, .aboutme img, .contact img, .skills ul{
+aside a, .contact img, .skills ul{
   width: 100px;
   position: relative;
   animation: mymove 5s infinite;
