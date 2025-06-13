@@ -60,6 +60,7 @@ body {
   box-shadow: 5px 10px #00000065;}
 .aboutme img:hover {
   transform: scale(120%);
+  animation-duration: 0.5s;
   border-radius: 60px;
   box-shadow: 5px 10px #ac670c65;}
 
